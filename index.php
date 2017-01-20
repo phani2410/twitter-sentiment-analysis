@@ -17,8 +17,11 @@
 <?php
 
 if(isset($_GET['q']) && $_GET['q']!='') {
-    include_once(dirname(__FILE__).'/config.php');
-    include_once(dirname(__FILE__).'/lib/TwitterSentimentAnalysis.php');
+    $ds = DIRECTORY_SEPARATOR;
+    $base_dir = realpath(dirname(__FILE__)  . $ds . '..') . $ds;
+    require_once("{$base_dir}config.php");
+    
+    require_once("{$base_dir}lib{$ds}TwitterSentimentAnalysis.php");
 
     $TwitterSentimentAnalysis = new TwitterSentimentAnalysis(DATUMBOX_API_KEY,TWITTER_CONSUMER_KEY,TWITTER_CONSUMER_SECRET,TWITTER_ACCESS_KEY,TWITTER_ACCESS_SECRET);
 
