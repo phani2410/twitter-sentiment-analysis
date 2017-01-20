@@ -4,10 +4,10 @@
 <meta http-equiv="Cache-Control" content="no-cache">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="Lang" content="en">
-<title>Datumbox Twitter Sentiment Analysis Demo</title>
+<title>Protons</title>
 </head>
 <body>
-<h1>Datumbox Twitter Sentiment Analysis</h1>
+<h1>Proton Twitter Sentiment Analysis</h1>
 <p>Type your keyword below to perform Sentiment Analysis on Twitter Results:</p>
 <form method="GET">
     <label>Keyword: </label> <input type="text" name="q" /> 
